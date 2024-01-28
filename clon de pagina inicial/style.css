@@ -1,0 +1,397 @@
+/* color azul : #338fff
+color verde: #52aa4e
+color amarillo: #f3bf00
+color rojo: #db4338 */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.navbar{
+    width: 100%;
+    padding: 15px;
+
+}
+
+.options-mobil {
+    display: none;
+}
+
+.options-mobil a{
+    text-decoration: none;
+}
+
+
+.nav-link {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-words{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-words a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.nav-words p:hover{
+    /* text-decoration:dashed */
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+.logos-nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.photo{
+    border-radius: 50%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-logo{
+    margin-top: 220px;
+}
+
+.google-logo img{
+    width: 300px;
+}
+
+.search-bar{
+    width: 500px;
+    border: solid 1px #4e4e4e;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #7f818300;
+    transition: 0.5s;
+}
+
+.search-bar img{
+    width: 20px;
+}
+
+input{
+    border: none;
+    width: 400px;
+}
+
+input:hover{
+    background-color: transparent;
+    border: none;
+}
+
+.camera, .micro:hover{
+    cursor: pointer;
+}
+
+.search-btn{
+    margin-top: 30px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar input{
+    border: none;
+    outline: none;
+}
+
+.search-btn button{
+    padding: 8px;
+    border-radius: 5px;
+    border: solid 0.01rem #4e4e4e;
+}
+
+.search-btn button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+    background-color: #f8f8f8;
+    transition: 0.3s;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    top: 264px;
+    position: relative;
+    pad: 10px;
+    flex-direction: column;
+    font-size: 1.3rem;
+    gap: 10px;
+    border-top: #c6c6c6 solid 1px;
+}
+
+.footer-mobil{
+    display: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.country{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    border-bottom: #c6c6c6 solid 1px;
+}
+
+.footer-options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    padding: 20px
+    
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 30px;
+}
+
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.dark-btn{
+    left: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+}
+
+.dark-btn img{
+    width: 40px;
+    border: none;
+    background-color: transparent;
+}
+
+.bombillo-on{
+    position: absolute;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.bombillo-off{
+    position: absolute;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+}
+
+.dark-mode .bombillo-on{
+    display: none;
+}
+
+.dark-mode .bombillo-on{
+    display: block;
+}
+
+.dark-mode .search-bar {
+    border-color: #fff;
+}
+
+.dark-mode .search-bar:hover {
+    border-color: #7f8183;
+}
+
+.dark-mode input {
+    background-color: transparent;
+    color: #fff;
+}
+
+.dark-mode .search-btn button {
+    border-color: #fff;
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode p {
+    color:#fff;
+}
+
+.dark-mode a {
+    color:#fff;
+}
+
+.dark-mode .search-btn button:hover {
+    border-color: #c6c6c6;
+    background-color: #444;
+    color: #fff;
+}
+
+/* Otros ajustes de estilos en modo oscuro si es necesario */
+
+
+
+@media (max-width: 768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .country{
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 390px) {
+    .options-mobil{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .options-mobil img{
+        width: 30px;
+    }
+
+    .nav-words{
+        display: none;
+    }
+
+    .options-mobil a{
+        color: #222;
+    }
+
+    .options-mobil p:hover{
+        text-decoration:underline;
+        cursor: pointer;
+        color: #222;
+    }
+    
+
+    .logos-nav{
+        gap: 10px;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+    }
+
+    .google-logo img{
+        width: 150px;
+    }
+
+    .search-bar{
+        width: 330px;
+    }
+
+    footer{
+        width: 100vw;
+        top: 384px;
+    }
+
+    .country{
+        padding-left: 10px;
+    }
+
+    .footer-options{
+        display: none;
+    }
+
+    .footer-mobil{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .country{
+        justify-content: flex-start;
+        padding: 20px 20px 10px 20px;
+    }
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .dark-btn{
+        left: 300px;
+        bottom: 76px;
+        z-index: 1;
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+}

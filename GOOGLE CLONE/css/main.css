@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 13px;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a{
+    margin-right: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav .nav-right-section a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+nav .nav-right-section .menu-icon {
+    background-image: url('../images/al-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+nav .nav-right-section img {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+main {
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    width: 300px;
+}
+
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #DFE1E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+.main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #DFE1E500;
+    
+    transition: 0.5s;
+}
+
+main .main-input .search-icon{
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    z-index: 1;
+}
+
+.micro-icon{
+    background-image:           
+    url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+}
+
+.main-buttons {
+    width: 530px;
+    margin: 0 auto;
+    
+}
+
+.main-buttons div {
+    display: inline-block;
+}
+
+.main-buttons button {
+    height: 36px;
+    background-color: #f4f4f4;
+    border: none;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+    background-color: #f8f8f8;
+    transition: 0.3s;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #5f6368;
+    margin: 10px;
+}
+
+.footer_left{
+    justify-self: left;
+}
+
+.footer_right {
+    justify-self: right;
+}

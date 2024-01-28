@@ -1,0 +1,110 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.titulo{
+    font-size: 2.8rem;
+    font-family: 'Linux Libertine','Times','Source Serif Pro',serif;
+    font-weight: 100;
+    display: inline-block;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mayuscula{
+    font-size: 3.8rem;
+    
+}
+
+.subtitulo{
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Linux Libertine','Times','Source Serif Pro',serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+    background-color: #b3d7ff; /* Color de fondo del globo */
+    border-radius: 50%; /* Hace que el div sea redondo */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 400px;
+    z-index: 0;
+}
+
+.idiomas a{
+    text-decoration: none;
+    color: #495fc8;
+    font-family: 'Linux Libertine','Times','Source Serif Pro',serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.idiomas{
+    margin-top: 30px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.idiomas p{
+    font-size: 1.8rem;
+}
+
+.idioma{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-right: 300px;
+}
+
+.two{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-right: 200px;
+}
